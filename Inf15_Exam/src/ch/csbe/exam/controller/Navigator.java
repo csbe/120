@@ -13,7 +13,8 @@ public class Navigator {
 		String next = c.getClass().getSimpleName().toLowerCase();
 		
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/"+next+".fxml"));
-		Controller f = loader.<Controller>getController();
+		loader.setController(c);
+		//Controller f = loader.<Controller>getController();
 		Parent p;
 		try {
 			p = loader.load();

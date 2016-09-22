@@ -1,11 +1,16 @@
 package ch.csbe.exam.controller;
 
-import java.io.IOException;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 public class First extends Controller{
+	
+	@FXML protected TextField input;
 
 	protected void next(){
-		new Navigator().navigate(new Second());
+		Second s = new Second();
+		new Navigator().navigate(s);
+		s.setText(input.getText());
 	}
 	
 }
