@@ -1,0 +1,7 @@
+.abort{
+	-fx-background-color: #ffff00;
+}
+
+.save{
+	-fx-background-color: #00ff00;
+}

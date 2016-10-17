@@ -1,0 +1,17 @@
+package ch.csbe.hello;
+
+public class HelloInf {
+	
+	public HelloInf(){
+		
+	}
+	
+	public static void sayHello(){
+		System.out.println("Inf Hello");
+	}
+	
+	public void sayHelloInst(){
+		System.out.println("Inf Hello");
+	}
+
+}

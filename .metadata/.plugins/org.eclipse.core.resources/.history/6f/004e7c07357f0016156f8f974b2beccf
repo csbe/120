@@ -1,0 +1,13 @@
+.abort{
+	-fx-background-color: #ffff00;
+}
+
+.save{
+	-fx-background-color: #00ff00;
+}
+
+.error {
+    -fx-border-color: red;
+    -fx-border-width: 2 ; 
+    -fx-border-style: solid ; /*segments(10, 15, 15, 15)  line-cap round*/
+}

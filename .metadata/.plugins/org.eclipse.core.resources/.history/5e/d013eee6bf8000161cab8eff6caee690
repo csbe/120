@@ -1,0 +1,9 @@
+package ch.csbe.exam.controller;
+
+public class First extends Controller{
+
+	protected void next(){
+		new Navigator().navigate(new Second());
+	}
+	
+}

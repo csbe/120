@@ -1,0 +1,32 @@
+package ch.csbe.rechner;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+
+public class CalcController {
+
+	@FXML protected Label output;
+	@FXML protected Label calc;
+	private String locout = "";
+	
+	@FXML protected void calc(MouseEvent event){
+		Label l = (Label) event.getSource();
+		
+		switch(l.getText()){
+		case "C": calc.setText("");
+		case "CE": output.setText(""); break;
+		case "=": calc.setText(""); output.setText("berechnet"); break;
+		case ":": ; 
+		case "*": ;
+		case "-": ; 
+		case "+": ; break;
+		default: 
+			output.setText(locout+l.getText()); 
+			locout += l.getText();break;
+		}
+		
+	}
+	
+}

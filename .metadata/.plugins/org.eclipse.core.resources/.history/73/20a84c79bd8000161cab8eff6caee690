@@ -1,0 +1,22 @@
+package ch.csbe.exam;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class ExamApp extends Application {
+	
+	public static Stage stage;
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		
+		stage.setTitle("Exam");
+		stage.show();
+		this.stage = stage;
+	}
+
+}

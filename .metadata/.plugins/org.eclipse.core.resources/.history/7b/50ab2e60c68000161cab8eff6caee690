@@ -1,0 +1,23 @@
+package ch.csbe.exam.controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
+public class Second extends Controller{
+
+	@FXML protected TextField input;
+	private String value;
+	
+	
+	public Second(String value){
+		this.value = value;
+	}
+	
+	@FXML protected void initialize(){
+		input.setText(value);
+	}
+	
+	protected void next(){
+		new Navigator().navigate(new First());
+	}
+}

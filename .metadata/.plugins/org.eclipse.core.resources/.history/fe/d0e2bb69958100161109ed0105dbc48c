@@ -1,0 +1,26 @@
+package ch.csbe.serialize.helper;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+import ch.csbe.serialize.model.Exam;
+
+public class SerializeIO {
+	
+	public static void save(Exam e){
+		try {
+			FileOutputStream file = new FileOutputStream(e.getName()+".ser");
+			ObjectOutputStream out = new ObjectOutputStream(file);
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+	}
+
+}

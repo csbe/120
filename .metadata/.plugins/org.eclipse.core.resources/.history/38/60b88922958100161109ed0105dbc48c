@@ -1,0 +1,5 @@
+package ch.csbe.serialize.helper;
+
+public class SerializeIO {
+
+}

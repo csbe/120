@@ -1,0 +1,47 @@
+package ch.csbe.rechner;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+
+public class CalcController {
+
+	@FXML protected Label output;
+	@FXML protected Label calc;
+	private String result = "";
+	private String outputtext = "";
+	
+	@FXML protected void calc(MouseEvent event) throws ScriptException{
+		Label l = (Label) event.getSource();
+		
+		switch(l.getText()){
+		case "C": calc.setText("");
+		case "CE": output.setText(""); result=""; break;
+		case "=": 
+			System.out.println(result);
+			ScriptEngine engine =
+            new ScriptEngineManager().getEngineByName("JavaScript");
+			calc.setText(""); output.setText(engine.eval(result).toString()); 
+			result=""; break;
+		case ":": ; 
+		case "*": ; 
+		case "-": ; 
+		case "+": 
+			result += outputtext;
+			outputtext = "";
+			calc.setText(result);			
+		; break;
+		default: 
+			outputtext += l.getText();
+			output.setText(outputtext);
+			break;
+		}
+		
+	}
+	
+}

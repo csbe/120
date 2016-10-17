@@ -1,0 +1,9 @@
+package ch.csbe.hello.expl;
+
+public class HelloInf {
+	
+	public void sayHello(){
+		System.out.println("Hello Inf expl");
+	}
+
+}

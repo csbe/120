@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package ch.csbe.hello;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author ebuchs
+ *
+ */
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		int zahl = 567;
+		char c = 'a';
+		float f = 45.4f;
+		double d = 45.4;
+		boolean b = true;
+		short s = 45;
+		byte by = 4;
+		
+		String str = "Hallo Welt";
+		String str1 = new String("Hallo Welt");
+		Integer i = zahl;
+		
+		int zahlen[] = new int[5];
+		zahlen[0] = 45;
+		zahlen[1] = 34;
+		
+		System.out.println(zahlen[0]);
+ 		
+		
+		List<Integer> liste = new ArrayList<Integer>();
+		
+		
+		
+		System.out.println("Hello World");
+
+	}
+
+}

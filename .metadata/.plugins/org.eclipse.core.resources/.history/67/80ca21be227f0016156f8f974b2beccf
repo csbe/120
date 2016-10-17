@@ -1,0 +1,10 @@
+package ch.csbe.hello;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
+public class ControllerModulErfassung {
+	
+	@FXML protected TextField nr;
+
+}

@@ -1,0 +1,22 @@
+package ch.csbe.exam.controller;
+
+import java.io.IOException;
+
+import ch.csbe.exam.ExamApp;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+
+public class Navigator {
+	
+	public void navigate(Controller c) throws IOException{
+		System.out.println(c.getClass().toString());
+		//String s = c.getClass().to
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/first.fxml"));
+		Controller f = loader.<Controller>getController();
+		Parent p = loader.load();
+		Scene s = new Scene(p);
+		ExamApp.stage.setScene(s);
+	}
+
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="ch.csbe.rechner.CalcController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" onMouseClicked="#calc" text="CE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="C" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="&lt;" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text=":" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="*" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="7" textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="4" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="1" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="±" textAlignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" minWidth="-Infinity" onMouseClicked="#calc" prefHeight="58.0" prefWidth="67.0" text="=" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <VBox prefHeight="72.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="calc" alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="259.0" textAlignment="RIGHT" />
+            <Label fx:id="output" alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="261.0" textAlignment="RIGHT">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

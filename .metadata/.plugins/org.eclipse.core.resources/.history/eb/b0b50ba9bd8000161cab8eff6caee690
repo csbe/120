@@ -1,0 +1,9 @@
+package ch.csbe.exam.controller;
+
+public class Navigator {
+	
+	public void navigate(){
+		
+	}
+
+}

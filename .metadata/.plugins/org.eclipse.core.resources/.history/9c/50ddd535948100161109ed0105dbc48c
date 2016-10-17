@@ -1,0 +1,8 @@
+package ch.csbe.serialize.model;
+
+public class Student {
+	
+	private String name;
+	private float points;
+
+}

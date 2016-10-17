@@ -1,0 +1,12 @@
+package ch.csbe.serialize.model;
+
+import java.io.Serializable;
+
+public class Exam implements Serializable{
+
+	private int nr;
+	private String name;
+	private int points;
+	
+	
+}

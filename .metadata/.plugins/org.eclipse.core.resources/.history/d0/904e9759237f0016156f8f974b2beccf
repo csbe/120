@@ -1,0 +1,10 @@
+package ch.csbe.hello;
+
+public class ModulApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

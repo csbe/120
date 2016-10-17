@@ -1,0 +1,22 @@
+INDEX VERSION 1.127+/home/ebuchs/ownCloud/CSBE/ausbildung/120/2016/inf15/120/.metadata/.plugins/org.eclipse.jdt.core
+1101691518.index
+541567468.index
+1235883416.index
+1316724200.index
+2538915309.index
+66985359.index
+1586879879.index
+4105318529.index
+2108343341.index
+827147536.index
+1440517391.index
+1074276941.index
+1992288928.index
+140904723.index
+4286965733.index
+3343164315.index
+318540562.index
+968101672.index
+391158920.index
+1893797951.index
+3869279493.index

@@ -1,0 +1,13 @@
+package ch.csbe.exam.controller;
+
+import ch.csbe.exam.ExamApp;
+
+public class Navigator {
+	
+	
+	
+	public void navigate(Controller c){
+		ExamApp.stage.setScene();
+	}
+
+}

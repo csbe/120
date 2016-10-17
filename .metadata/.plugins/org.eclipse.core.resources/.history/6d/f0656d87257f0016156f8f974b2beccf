@@ -1,0 +1,12 @@
+package ch.csbe.hello;
+
+import javafx.application.Application;
+
+public class ModulApp extends Application{
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

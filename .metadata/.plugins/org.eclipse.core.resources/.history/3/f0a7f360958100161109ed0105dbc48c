@@ -1,0 +1,11 @@
+package ch.csbe.serialize.helper;
+
+import ch.csbe.serialize.model.Exam;
+
+public class SerializeIO {
+	
+	public static void save(Exam e){
+		
+	}
+
+}
